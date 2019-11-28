@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  imgUrl: 'http://localhost:8080/uploads/',
+  diaryUrl: 'http://localhost:8080/api/auth/diary/',
+  uploadFileUrl: 'http://localhost:8080/api/auth/file/',
+  tagUrl: 'http://localhost:8080/api/auth/tag/',
+  userUrl: 'http://localhost:8080/api/auth/user/',
+
+  loginUrl: 'http://localhost:8080/api/auth/signin',
+  signupUrl: 'http://localhost:8080/api/auth/signup',
+  updateProfileUrl: 'http://localhost:8080/api/auth/update-profile',
+  updatePasswordUrl: 'http://localhost:8080/api/auth/update-password',
 };
 
 /*

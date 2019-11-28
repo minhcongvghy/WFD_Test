@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 col-sm-4 sidebar1" style="height: 800px">
+
+        <br>
+        <div id="demo" class="left-navigation">
+          <ul class="list position-fixed">
+            <li  [routerLink]="'/create-diary'"><h2>New Entry</h2></li>
+            <li [routerLink]="'/list-diary'"><h2>My List Entry</h2></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-8 col-sm-6 main-content" style="background: white">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="col-md-2 col-sm-2 main-content" style="background: white">
+      </div>
+    </div>
+  </div>
+
+
+</div>
