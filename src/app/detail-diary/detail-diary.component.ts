@@ -2,7 +2,6 @@ import {Component, OnInit, Pipe} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {DomSanitizer} from '@angular/platform-browser';
 import {Diary} from '../services/diary';
-import {TokenStorageService} from '../auth/token-storage.service';
 import {DiaryService} from '../services/diary.service';
 import {environment} from '../../environments/environment';
 
@@ -20,7 +19,6 @@ export class DetailDiaryComponent implements OnInit  {
 
   constructor(private activatedRoute: ActivatedRoute,
               private domSanitizer: DomSanitizer,
-              private token: TokenStorageService,
               private diaryService: DiaryService,
               private sanitizer: DomSanitizer) {
     this.activatedRoute.params.subscribe(params => {

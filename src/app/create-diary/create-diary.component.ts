@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {TokenStorageService} from '../auth/token-storage.service';
 import {DiaryService} from '../services/diary.service';
 import {FormControl, FormGroup} from '@angular/forms';
 import {Tag} from '../services/tag';
@@ -29,8 +28,7 @@ export class CreateDiaryComponent implements OnInit {
   private returnUrl: string;
   private filePath: any;
 
-  constructor(private token: TokenStorageService,
-              private diaryService: DiaryService,
+  constructor(private diaryService: DiaryService,
               private tagService: TagService,
               private route: ActivatedRoute,
               private router: Router) { }

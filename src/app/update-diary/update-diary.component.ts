@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {DomSanitizer} from '@angular/platform-browser';
-import {TokenStorageService} from '../auth/token-storage.service';
 import {DiaryService} from '../services/diary.service';
 import {Diary} from '../services/diary';
 import {TagService} from '../services/tag.service';
 import {Tag} from '../services/tag';
-import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-update-diary',
@@ -25,7 +23,6 @@ export class UpdateDiaryComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute,
               private domSanitizer: DomSanitizer,
-              private token: TokenStorageService,
               private diaryService: DiaryService,
               private tagService: TagService,
               private route: ActivatedRoute,
